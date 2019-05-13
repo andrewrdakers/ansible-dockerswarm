@@ -1,7 +1,7 @@
 ---
 
 - name: "Provision a Docker Swarm cluster"
-  hosts: docker-engine
+  hosts: docker_engine
   tasks:
 
     - include: tasks/main.yml
