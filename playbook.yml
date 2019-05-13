@@ -2,5 +2,8 @@
 
 - name: "Provision a Docker Swarm cluster"
   hosts: docker-engine
-  roles:
-    - { role: ansible-dockerswarm }
+  tasks:
+
+    - include: tasks/main.yml
+  #roles:
+  #  - { role: ansible-dockerswarm }
